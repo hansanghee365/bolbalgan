@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>My App</title>
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <i id="open_menu" class="fas fa-bars"></i>
+        <div id="menu-con">
+        <nav id="menu">
+          <i id="close_menu" class="fas fa-times"></i>
+          <ul>
+            <li><a href="#title">Title</a></li>
+            <li><a href="#news">Our us</a></li>
+            <li><a href="#">Menu</a></li>
+          </ul>
+        </nav>
+      </div>
+        <img src="img/20.png"width="150px">
+      </div>
+    </header>
+
+    <div id="title" class="blank"></div>
+    <section class="features">
+    <div class="container">
+      <h1 class="section-title">Title</h1>
+      <section class="feature">
+        <img src="img/10.png">
+        <p>text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text.</p>
+      </section>
+      <section class="feature">
+        <img src="img/11.png">
+        <p>text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text.</p>
+      </section>
+      <section class="feature">
+        <img src="img/19.jpg">
+        <p>text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text.<span id="news"></span></p>
+      </section>
+    </div>
+    </section>
+    <section class="news">
+      <div class="container">
+        <h1 class="section-title">Our us</h1>
+        <div class="flex">
+        <article class="news-item">
+          <img src="img/13.jpg" alt="">
+            <p>text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text.</p>
+        </article>
+        <article class="news-item">
+          <img src="img/17.jpg" alt="">
+            <p>text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text.</p>
+        </article>
+        <article class="news-item">
+          <img src="img/18.jpg" alt="">
+            <p>text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text. text.</p>
+        </article>
+      </div>
+      </div>
+    </section>
+    <footer>
+      $copy; balhyoga.com
+    </footer>
+    <script>
+      var openMenu = document.getElementById('open_menu');
+      var closeMenu = document.getElementById('close_menu');
+      var menu = document.getElementById('menu-con');
+      openMenu.addEventListener('click',function(){
+        menu.classList.add('shown');
+      });
+      closeMenu.addEventListener('click',function(){
+        menu.classList.remove('shown');
+      });
+    </script>
+  </body>
+</html>
